@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import '../styles/home.css';
 
 const TypingHeader = () => {
-  const fullText = "Revolutionize businesses with Secure & Scalable Software Solutions";
+  const fullText = "Revolutionize businesses with Secure & Scalable Softwares";
   const words = fullText.split(" ");
   const [displayedText, setDisplayedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
