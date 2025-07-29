@@ -149,6 +149,10 @@
     flex-direction: column;
   }
 
+  .points{
+    gap: 5px;
+  }
+
   .intro-right {
     padding-right: 0;
   }
