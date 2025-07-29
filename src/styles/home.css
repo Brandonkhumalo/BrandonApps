@@ -137,6 +137,14 @@
 
 /* Responsive layout */
 @media (max-width: 768px) {
+  .homeheader2{
+    font-size: 16px;
+  }
+
+  .homeheader{
+    font-size: 40px;
+  }
+
   .introContent {
     flex-direction: column;
   }

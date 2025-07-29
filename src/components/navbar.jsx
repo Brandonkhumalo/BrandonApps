@@ -6,7 +6,7 @@ function Navbar() {
     return(
         <div className='mainNavBar'>
             <div className='lefttnav'>
-                <Link to='BrandonApps/'>
+                <Link to='/'>
                     <img className='BigNavPic'
                     src={logo} alt="NavPicture" />
                 </Link>
