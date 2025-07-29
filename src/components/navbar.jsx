@@ -13,17 +13,17 @@ function Navbar() {
             </div>
 
             <div className='rightnav'>
-                <Link style={{textDecoration: 'none'}} to="BrandonApps/">
+                <Link style={{textDecoration: 'none'}} to="/">
                     <span className='navlink'>Home</span>
                 </Link>
-                <Link style={{textDecoration: 'none'}} to="BrandonApps/services/offered">
+                <Link style={{textDecoration: 'none'}} to="/services/offered">
                     <span className='navlink'>Services</span>
                 </Link>
-                <Link style={{textDecoration: 'none'}} to="BrandonApps/contact">
+                <Link style={{textDecoration: 'none'}} to="/contact">
                     <span className='navlink'>Contact</span>
                 </Link>
 
-                <Link style={{textDecoration: 'none'}} to="BrandonApps/about-us">
+                <Link style={{textDecoration: 'none'}} to="/about-us">
                     <span className='navlink'>Our Company</span>
                 </Link>
             </div>

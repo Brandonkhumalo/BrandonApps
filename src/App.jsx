@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Services from './pages/services';
 import Contact from './pages/contact';
@@ -7,19 +7,18 @@ import Footer from './components/footer';
 import AboutUs from './pages/about-us';
 
 function App() {
-
   return (
-    <BrowserRouter>
-    <Navbar />
+    <HashRouter>
+      <Navbar />
       <Routes>
-        <Route path='BrandonApps/' element={<Home />} />
-        <Route path='BrandonApps/services/offered' element={<Services />} />
-        <Route path='BrandonApps/contact' element={<Contact />} />
-        <Route path='BrandonApps/about-us' element={<AboutUs />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/services/offered' element={<Services />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about-us' element={<AboutUs />} />
       </Routes>
-    <Footer />
-    </BrowserRouter>
-  )
+      <Footer />
+    </HashRouter>
+  );
 }
 
-export default App
+export default App;

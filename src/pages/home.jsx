@@ -40,7 +40,7 @@ function Home() {
                         Collaborate with Top Software Development Company
                     </div>
                 </div>
-                <button className="about-button2" onClick={() => navigate("BrandonApps/about-us")}>Know more</button>
+                <button className="about-button2" onClick={() => navigate("/about-us")}>Know more</button>
             </div>
 
             <div className="introHeader introHeader2">
@@ -52,7 +52,7 @@ function Home() {
                         Custom software development services play a crucial role in driving business growth by tailoring technology solutions to meet the specific needs and challenges of a company. This ensures that the software aligns perfectly with the business processes, workflows, and objectives. We provide the best Custom Software Development services to our clients. Custom software can be designed to enhance the overall customer experience. Whether it's a user-friendly interface, personalized features, or seamless integration, a well-developed software solution contributes to customer satisfaction, loyalty, and retention.
                     </div>
                 </div>
-                <button className="about-button" onClick={() => navigate("BrandonApps/services/offered")}>Know more</button>
+                <button className="about-button" onClick={() => navigate("/services/offered")}>Know more</button>
             </div>
 
             <div className='services-container'>
