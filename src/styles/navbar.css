@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+}
+
+.mainNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #217b7e;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 57px;
+    z-index: 1000;
+}
+
+.BigNavPic{
+    width: 100%;
+    max-width: 150px; /* or any preferred max size */
+    height: auto;
+}
+
+.rightnav{
+    display: flex;
+    gap: 25px;
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navlink{
+    color: white;
+}
+
+.navlink:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .rightnav{
+        font-size: 16px;
+    }
+}

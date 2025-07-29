@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+}
+
+.hear1{
+    font-family: "Solway", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 80px;
+    text-decoration: underline;
+    color: #000040;
+}
+
+.whether1{
+    font-family: "Reddit Sans", arial;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+
+    width: 90%;
+    margin-left: 5%;
+}
+
+.responsive-overall {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  background-color: #f8f8f8;
+  margin-top: 40px;
+}
+
+.responsive-left {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.responsive-left h1 {
+  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  color: #000040;
+  margin-top: 20px;
+}
+
+.responsive-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.responsive-right {
+  flex: 1 1 45%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-right img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hide image on small screens */
+@media (max-width: 768px) {
+  .responsive-right {
+    display: none;
+  }
+
+  .responsive-left {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .responsive-left h1 {
+    font-size: 2rem;
+  }
+
+  .responsive-left p {
+    font-size: 1rem;
+  }
+}
+
+/* Image grows on wider screens */
+@media (min-width: 1200px) {
+  .responsive-right img {
+    max-width: 550px;
+  }
+}
+
+/**/
+.responsive-overall2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  margin-top: 20px;
+}
+
+.responsive-left2 {
+  flex: 1 1 45%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-left2 img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.responsive-right2 {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.responsive-right2 h1 {
+  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  color: #000040;
+  margin-top: 10px;
+}
+
+.responsive-right2 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile: hide image */
+@media (max-width: 768px) {
+  .responsive-left2 {
+    display: none;
+  }
+
+  .responsive-right2 {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .responsive-right2 h1 {
+    font-size: 2rem;
+  }
+
+  .responsive-right2 p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large screens: grow image */
+@media (min-width: 1200px) {
+  .responsive-left2 img {
+    max-width: 550px;
+  }
+}
+
+/*WE BUILD CONNECTIONS*/
+
+.connections{
+font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #000040;
+  margin-top: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensures all cards stretch to equal height */
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 20px;
+}
+
+.card {
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Needed when using align-items: stretch */
+  min-height: 400px; /* Set a minimum height for all cards */
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  align-self: center;
+  width: 130px;
+  padding-Top: 20px;
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #000040;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  padding: 15px;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+}
+
+.homeCont{
+    padding-top: 55px;
+}
+
+.homeTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* ✅ vertical centering */
+  background-image: url('../assets/tech_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align: center; /* optional, makes inner text centered */
+}
+
+.homeheader{
+    font-family: "Solway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* shadow: x-offset y-offset blur color */
+}
+
+.points{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #000040;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* shadow: x-offset y-offset blur color */
+}
+
+.homeheader2{
+    font-family: "Reddit Sans", arial;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dot{
+    font-size: 50px;
+}
+
+.introHeader {
+  display: flex;
+  flex-direction: column; /* stack content + button vertically */
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.introHeader2 {
+  background-color: #217b7e;
+}
+
+.introContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.intro-left {
+  flex: 1;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Solway', 'Roboto';
+}
+
+.intro-left-text{
+    color: #1a5f61;
+}
+
+.intro-right-text{
+    color: #000040;
+}
+
+.intro-right {
+  flex: 2;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-right: 2rem;
+  font-family: 'Roboto', 'Solway';
+}
+
+.intro-right2 {
+  flex: 2;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-right: 2rem;
+  font-family: 'Roboto', 'Solway';
+}
+
+/* Button slightly lower than content */
+.about-button {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: white;
+  color: #217b7e;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.about-button:hover {
+  background-color: #1a5f61;
+  color: white;
+}
+
+.about-button2 {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #000040;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.about-button2:hover {
+  background-color: #1a5f61;
+  color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .introContent {
+    flex-direction: column;
+  }
+
+  .intro-right {
+    padding-right: 0;
+  }
+
+  .intro-left {
+    font-size: 20px;
+  }
+
+  .intro-right {
+    font-size: 15px;
+  }
+
+  .about-button {
+    align-self: stretch;
+    width: 100%;
+  }
+}
+
+.about-button:hover {
+  background-color: #1a5f61;
+  color: white;
+}
+
+.introContent2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .intro-right2 {
+    padding-right: 0;
+  }
+
+  .intro-right2 {
+    font-size: 15px;
+  }
+
+  .about-button2 {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+/* Overall container */
+
+.services-container{
+      background-color: #f4f4f4;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin-bottom: 50px;
+}
+
+.services-section-intro{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services-section-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: #000040;
+}
+
+.services-section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 80px; /* Space between cards ALWAYS visible */
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Card Container */
+.flip-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 250px; /* Controls consistent height */
+  position: relative;
+}
+
+/* Inner Card */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card Faces */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Front face */
+.flip-card-front {
+  background-color: #217b7e;
+  color: white;
+  font-family: 'Solway', 'Roboto';
+  font-size: 25px;
+}
+
+/* Back face */
+.flip-card-back {
+  background-color: #1a5f61;
+  color: white;
+  font-family: 'Solway', 'Roboto';
+  font-size: 20px;
+  transform: rotateY(180deg);
+}
+
+/* Tap support for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .flip-card-inner.flipped {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .points {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .flip-card {
+    height: 200px;
+  }
+}

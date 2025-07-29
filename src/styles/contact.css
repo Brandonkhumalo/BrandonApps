@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+}
+
+.hear{
+    font-family: "Solway", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.whether{
+    font-family: "Reddit Sans", arial;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffffcc;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 1100px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+  background: #00a6d6;
+  color: white;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 0;
+}
+
+.contact-left h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  margin-bottom: 1.2rem;
+}
+
+.contact-txt-color{
+    color: #000040;
+    text-decoration: none;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  background: transparent;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  border: 2px solid #00a6d6;
+  background: transparent;
+  border-radius: 25px;
+  color: #00a6d6;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00a6d6;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
