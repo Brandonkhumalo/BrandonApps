@@ -6,24 +6,24 @@ function Navbar() {
     return(
         <div className='mainNavBar'>
             <div className='lefttnav'>
-                <Link to='/'>
+                <Link to='BrandonApps/'>
                     <img className='BigNavPic'
                     src={logo} alt="NavPicture" />
                 </Link>
             </div>
 
             <div className='rightnav'>
-                <Link style={{textDecoration: 'none'}} to="/">
+                <Link style={{textDecoration: 'none'}} to="BrandonApps/">
                     <span className='navlink'>Home</span>
                 </Link>
-                <Link style={{textDecoration: 'none'}} to="/services/offered">
+                <Link style={{textDecoration: 'none'}} to="BrandonApps/services/offered">
                     <span className='navlink'>Services</span>
                 </Link>
-                <Link style={{textDecoration: 'none'}} to="/contact">
+                <Link style={{textDecoration: 'none'}} to="BrandonApps/contact">
                     <span className='navlink'>Contact</span>
                 </Link>
 
-                <Link style={{textDecoration: 'none'}} to="/about-us">
+                <Link style={{textDecoration: 'none'}} to="BrandonApps/about-us">
                     <span className='navlink'>Our Company</span>
                 </Link>
             </div>

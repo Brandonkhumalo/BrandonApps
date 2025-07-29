@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
     <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/services/offered' element={<Services />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/about-us' element={<AboutUs />} />
+        <Route path='BrandonApps/' element={<Home />} />
+        <Route path='BrandonApps/services/offered' element={<Services />} />
+        <Route path='BrandonApps/contact' element={<Contact />} />
+        <Route path='BrandonApps/about-us' element={<AboutUs />} />
       </Routes>
     <Footer />
     </BrowserRouter>
